@@ -1,2 +1,11 @@
 .idea/
 .docker-sync/
+capture_browser/*
+backstop_data/*
+features/*
+web*
+web/*
+backstop.json
+behat.yml
+behat.local.yml
+.env

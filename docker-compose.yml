@@ -30,8 +30,8 @@ services:
       PHP_FPM_GROUP: wodby
       COLUMNS: 80 # Set 80 columns for docker exec -it.
 ## Read instructions at https://wodby.com/docs/stacks/php/local/#xdebug
-#      PHP_XDEBUG: 1
-#      PHP_XDEBUG_DEFAULT_ENABLE: 1
+      PHP_XDEBUG: 1
+      PHP_XDEBUG_DEFAULT_ENABLE: 1
 #      PHP_XDEBUG_REMOTE_CONNECT_BACK: 0
 #      PHP_IDE_CONFIG: serverName=my-ide
 #      PHP_XDEBUG_IDEKEY: "my-ide"
@@ -45,7 +45,7 @@ services:
 #      SIMPLETEST_DB: "${DB_DRIVER}://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/${DB_NAME}#tests_"
 #      MINK_DRIVER_ARGS_WEBDRIVER: '["chrome", {"browserName":"chrome","goog:chromeOptions":{"args":["--disable-gpu","--headless"]}}, "http://chrome:9515"]'
     volumes:
-      - ./:/var/www/html:cached
+      - ./:/var/www/html
 ## Alternative for macOS users: docker-sync https://wodby.com/docs/stacks/drupal/local#docker-for-mac
 #      - docker-sync:/var/www/html
 ## For XHProf and Xdebug profiler traces
@@ -58,7 +58,7 @@ services:
       CRONTAB: "0 * * * * drush -r /var/www/html/web cron"
     command: sudo -E LD_PRELOAD=/usr/lib/preloadable_libiconv.so crond -f -d 0
     volumes:
-      - ./:/var/www/html:cached
+      - ./:/var/www/html
 
   nginx:
     image: wodby/nginx:$NGINX_TAG
@@ -73,7 +73,7 @@ services:
       NGINX_VHOST_PRESET: $NGINX_VHOST_PRESET
 #      NGINX_DRUPAL_FILE_PROXY_URL: http://example.com
     volumes:
-      - ./:/var/www/html:cached
+      - ./:/var/www/html
 ## Alternative for macOS users: docker-sync https://wodby.com/docs/stacks/drupal/local#docker-for-mac
 #      - docker-sync:/var/www/html
     labels:
@@ -134,16 +134,16 @@ services:
 #    container_name: "${PROJECT_NAME}_redis"
 #    image: wodby/redis:$REDIS_TAG
 
-#  adminer:
-#    container_name: "${PROJECT_NAME}_adminer"
-#    image: wodby/adminer:$ADMINER_TAG
-#    environment:
-## For PostgreSQL:
-##      ADMINER_DEFAULT_DB_DRIVER: pgsql
-#      ADMINER_DEFAULT_DB_HOST: $DB_HOST
-#      ADMINER_DEFAULT_DB_NAME: $DB_NAME
-#    labels:
-#      - "traefik.http.routers.${PROJECT_NAME}_adminer.rule=Host(`adminer.${PROJECT_BASE_URL}`)"
+  adminer:
+    container_name: "${PROJECT_NAME}_adminer"
+    image: wodby/adminer:$ADMINER_TAG
+    environment:
+# For PostgreSQL:
+#      ADMINER_DEFAULT_DB_DRIVER: pgsql
+      ADMINER_DEFAULT_DB_HOST: $DB_HOST
+      ADMINER_DEFAULT_DB_NAME: $DB_NAME
+    labels:
+      - "traefik.http.routers.${PROJECT_NAME}_adminer.rule=Host(`adminer.${PROJECT_BASE_URL}`)"
 
 #  pma:
 #    image: phpmyadmin/phpmyadmin
@@ -165,13 +165,13 @@ services:
 #    labels:
 #      - "traefik.http.routers.${PROJECT_NAME}_solr.rule=Host(`solr.${PROJECT_BASE_URL}`)"
 
-#  drupal-node:
-#    image: wodby/drupal-node:$DRUPAL_NODE_TAG
-#    container_name: "${PROJECT_NAME}_drupal_nodejs"
-#    labels:
-#      - "traefik.http.routers.${PROJECT_NAME}_drupal_node.rule=Host(`drupal_node.${PROJECT_BASE_URL}`)"
-#    environment:
-#      NODE_SERVICE_KEY: node-service-key
+  #drupal-node:
+    #image: wodby/drupal-node:$DRUPAL_NODE_TAG
+    #container_name: "${PROJECT_NAME}_drupal_nodejs"
+    #labels:
+      #- "traefik.http.routers.${PROJECT_NAME}_drupal_node.rule=Host(`drupal_node.${PROJECT_BASE_URL}`)"
+    #environment:
+      #NODE_SERVICE_KEY: node-service-key
 
 #  memcached:
 #    container_name: "${PROJECT_NAME}_memcached"
@@ -192,18 +192,18 @@ services:
 #      WEAVER_WORKER_TIMEOUT: 90
 #      WEAVER_CONVERSION_FALLBACK: "false"
 
-#  node:
-#    image: wodby/node:$NODE_TAG
-#    container_name: "${PROJECT_NAME}_node"
-#    working_dir: /var/www/html/path/to/theme/to/build
-#    labels:
-#      - "traefik.http.services.${PROJECT_NAME}_node.loadbalancer.server.port=3000"
-#      - "traefik.http.routers.${PROJECT_NAME}_node.rule=Host(`node.${PROJECT_BASE_URL}`)"
-#    expose:
-#      - "3000"
-#    volumes:
-#      - ./:/var/www/html
-#    command: sh -c 'yarn install && yarn run start'
+  #node:
+    #image: wodby/node:$NODE_TAG
+    #container_name: "${PROJECT_NAME}_node"
+    #working_dir: /var/www/html/web/sites/all/themes/fewoaufsylt/
+    #labels:
+      #- "traefik.http.services.${PROJECT_NAME}_node.loadbalancer.server.port=3000"
+      #- "traefik.http.routers.${PROJECT_NAME}_node.rule=Host(`node.${PROJECT_BASE_URL}`)"
+    #expose:
+      #- "3000"
+    #volumes:
+      #- ./:/var/www/html
+    #command: sh -c 'yarn run watch'
 
 #  blackfire:
 #    image: blackfire/blackfire
@@ -281,7 +281,7 @@ services:
     container_name: "${PROJECT_NAME}_traefik"
     command: --api.insecure=true --providers.docker
     ports:
-      - '8000:80'
+      - '80:80'
 #      - '8080:8080' # Dashboard
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
@@ -292,3 +292,8 @@ services:
 #    external: true
 ## For Xdebug profiler
 #  files:
+
+  browser:
+    hostname: browser
+    image: selenium/standalone-chrome
+    container_name: "${PROJECT_NAME}_browser"
