@@ -1,0 +1,13 @@
+{
+  "require": {
+    "drupal/drupal-extension": "@dev",
+    "dmore/behat-chrome-extension" : "@dev",
+    "drupal/drupal-extension" : "@dev"
+  
+  },
+    "config": {
+    "bin-dir": "bin/"
+  
+    }
+
+}

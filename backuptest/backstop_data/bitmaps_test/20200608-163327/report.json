@@ -1,0 +1,501 @@
+{
+  "testSuite": "BackstopJS",
+  "tests": [
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/backstop_fewoault_Homepage_0_document_0_phone.png",
+        "test": "../bitmaps_test/20200608-163327/backstop_fewoault_Homepage_0_document_0_phone.png",
+        "selector": "document",
+        "fileName": "backstop_fewoault_Homepage_0_document_0_phone.png",
+        "label": "Homepage",
+        "misMatchThreshold": 0.1,
+        "url": "http://few.docker.localhost",
+        "expect": 0,
+        "viewportLabel": "phone",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.89",
+          "analysisTime": 561
+        },
+        "diffImage": "../bitmaps_test/20200608-163327/failed_diff_backstop_fewoault_Homepage_0_document_0_phone.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/backstop_fewoault_Homepage_0_document_1_tablet.png",
+        "test": "../bitmaps_test/20200608-163327/backstop_fewoault_Homepage_0_document_1_tablet.png",
+        "selector": "document",
+        "fileName": "backstop_fewoault_Homepage_0_document_1_tablet.png",
+        "label": "Homepage",
+        "misMatchThreshold": 0.1,
+        "url": "http://few.docker.localhost",
+        "expect": 0,
+        "viewportLabel": "tablet",
+        "diff": {
+          "isSameDimensions": false,
+          "dimensionDifference": {
+            "width": 0,
+            "height": -14
+          },
+          "misMatchPercentage": "9.62",
+          "analysisTime": 871
+        },
+        "diffImage": "../bitmaps_test/20200608-163327/failed_diff_backstop_fewoault_Homepage_0_document_1_tablet.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/backstop_fewoault_Homepage_0_document_2_Desktop.png",
+        "test": "../bitmaps_test/20200608-163327/backstop_fewoault_Homepage_0_document_2_Desktop.png",
+        "selector": "document",
+        "fileName": "backstop_fewoault_Homepage_0_document_2_Desktop.png",
+        "label": "Homepage",
+        "misMatchThreshold": 0.1,
+        "url": "http://few.docker.localhost",
+        "expect": 0,
+        "viewportLabel": "Desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.17",
+          "analysisTime": 412
+        },
+        "diffImage": "../bitmaps_test/20200608-163327/failed_diff_backstop_fewoault_Homepage_0_document_2_Desktop.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/backstop_fewoault_Contact_0_document_0_phone.png",
+        "test": "../bitmaps_test/20200608-163327/backstop_fewoault_Contact_0_document_0_phone.png",
+        "selector": "document",
+        "fileName": "backstop_fewoault_Contact_0_document_0_phone.png",
+        "label": "Contact",
+        "misMatchThreshold": 0.1,
+        "url": "http://few.docker.localhost/contact",
+        "expect": 0,
+        "viewportLabel": "phone",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "14.71",
+          "analysisTime": 396
+        },
+        "diffImage": "../bitmaps_test/20200608-163327/failed_diff_backstop_fewoault_Contact_0_document_0_phone.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/backstop_fewoault_Contact_0_document_1_tablet.png",
+        "test": "../bitmaps_test/20200608-163327/backstop_fewoault_Contact_0_document_1_tablet.png",
+        "selector": "document",
+        "fileName": "backstop_fewoault_Contact_0_document_1_tablet.png",
+        "label": "Contact",
+        "misMatchThreshold": 0.1,
+        "url": "http://few.docker.localhost/contact",
+        "expect": 0,
+        "viewportLabel": "tablet",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "2.86",
+          "analysisTime": 724
+        },
+        "diffImage": "../bitmaps_test/20200608-163327/failed_diff_backstop_fewoault_Contact_0_document_1_tablet.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/backstop_fewoault_Contact_0_document_2_Desktop.png",
+        "test": "../bitmaps_test/20200608-163327/backstop_fewoault_Contact_0_document_2_Desktop.png",
+        "selector": "document",
+        "fileName": "backstop_fewoault_Contact_0_document_2_Desktop.png",
+        "label": "Contact",
+        "misMatchThreshold": 0.1,
+        "url": "http://few.docker.localhost/contact",
+        "expect": 0,
+        "viewportLabel": "Desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.17",
+          "analysisTime": 587
+        },
+        "diffImage": "../bitmaps_test/20200608-163327/failed_diff_backstop_fewoault_Contact_0_document_2_Desktop.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/backstop_fewoault_impressut_0_document_0_phone.png",
+        "test": "../bitmaps_test/20200608-163327/backstop_fewoault_impressut_0_document_0_phone.png",
+        "selector": "document",
+        "fileName": "backstop_fewoault_impressut_0_document_0_phone.png",
+        "label": "impressut",
+        "misMatchThreshold": 0.1,
+        "url": "http://few.docker.localhost/content/impressum",
+        "expect": 0,
+        "viewportLabel": "phone",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.31",
+          "analysisTime": 380
+        },
+        "diffImage": "../bitmaps_test/20200608-163327/failed_diff_backstop_fewoault_impressut_0_document_0_phone.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/backstop_fewoault_impressut_0_document_1_tablet.png",
+        "test": "../bitmaps_test/20200608-163327/backstop_fewoault_impressut_0_document_1_tablet.png",
+        "selector": "document",
+        "fileName": "backstop_fewoault_impressut_0_document_1_tablet.png",
+        "label": "impressut",
+        "misMatchThreshold": 0.1,
+        "url": "http://few.docker.localhost/content/impressum",
+        "expect": 0,
+        "viewportLabel": "tablet",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00",
+          "analysisTime": 597
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/backstop_fewoault_impressut_0_document_2_Desktop.png",
+        "test": "../bitmaps_test/20200608-163327/backstop_fewoault_impressut_0_document_2_Desktop.png",
+        "selector": "document",
+        "fileName": "backstop_fewoault_impressut_0_document_2_Desktop.png",
+        "label": "impressut",
+        "misMatchThreshold": 0.1,
+        "url": "http://few.docker.localhost/content/impressum",
+        "expect": 0,
+        "viewportLabel": "Desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.41",
+          "analysisTime": 695
+        },
+        "diffImage": "../bitmaps_test/20200608-163327/failed_diff_backstop_fewoault_impressut_0_document_2_Desktop.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/backstop_fewoault_Keitum_0_document_0_phone.png",
+        "test": "../bitmaps_test/20200608-163327/backstop_fewoault_Keitum_0_document_0_phone.png",
+        "selector": "document",
+        "fileName": "backstop_fewoault_Keitum_0_document_0_phone.png",
+        "label": "Keitum",
+        "misMatchThreshold": 0.1,
+        "url": "http://few.docker.localhost/keitum",
+        "expect": 0,
+        "viewportLabel": "phone",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.19",
+          "analysisTime": 506
+        },
+        "diffImage": "../bitmaps_test/20200608-163327/failed_diff_backstop_fewoault_Keitum_0_document_0_phone.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/backstop_fewoault_Keitum_0_document_1_tablet.png",
+        "test": "../bitmaps_test/20200608-163327/backstop_fewoault_Keitum_0_document_1_tablet.png",
+        "selector": "document",
+        "fileName": "backstop_fewoault_Keitum_0_document_1_tablet.png",
+        "label": "Keitum",
+        "misMatchThreshold": 0.1,
+        "url": "http://few.docker.localhost/keitum",
+        "expect": 0,
+        "viewportLabel": "tablet",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.10",
+          "analysisTime": 599
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/backstop_fewoault_Keitum_0_document_2_Desktop.png",
+        "test": "../bitmaps_test/20200608-163327/backstop_fewoault_Keitum_0_document_2_Desktop.png",
+        "selector": "document",
+        "fileName": "backstop_fewoault_Keitum_0_document_2_Desktop.png",
+        "label": "Keitum",
+        "misMatchThreshold": 0.1,
+        "url": "http://few.docker.localhost/keitum",
+        "expect": 0,
+        "viewportLabel": "Desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.06",
+          "analysisTime": 443
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/backstop_fewoault_Appartment_0_document_0_phone.png",
+        "test": "../bitmaps_test/20200608-163327/backstop_fewoault_Appartment_0_document_0_phone.png",
+        "selector": "document",
+        "fileName": "backstop_fewoault_Appartment_0_document_0_phone.png",
+        "label": "Appartment",
+        "misMatchThreshold": 0.1,
+        "url": "http://few.docker.localhost/appartement/hausteil-paula",
+        "expect": 0,
+        "viewportLabel": "phone",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.26",
+          "analysisTime": 422
+        },
+        "diffImage": "../bitmaps_test/20200608-163327/failed_diff_backstop_fewoault_Appartment_0_document_0_phone.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/backstop_fewoault_Appartment_0_document_1_tablet.png",
+        "test": "../bitmaps_test/20200608-163327/backstop_fewoault_Appartment_0_document_1_tablet.png",
+        "selector": "document",
+        "fileName": "backstop_fewoault_Appartment_0_document_1_tablet.png",
+        "label": "Appartment",
+        "misMatchThreshold": 0.1,
+        "url": "http://few.docker.localhost/appartement/hausteil-paula",
+        "expect": 0,
+        "viewportLabel": "tablet",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.05",
+          "analysisTime": 580
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/backstop_fewoault_Appartment_0_document_2_Desktop.png",
+        "test": "../bitmaps_test/20200608-163327/backstop_fewoault_Appartment_0_document_2_Desktop.png",
+        "selector": "document",
+        "fileName": "backstop_fewoault_Appartment_0_document_2_Desktop.png",
+        "label": "Appartment",
+        "misMatchThreshold": 0.1,
+        "url": "http://few.docker.localhost/appartement/hausteil-paula",
+        "expect": 0,
+        "viewportLabel": "Desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.01",
+          "analysisTime": 696
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/backstop_fewoault_Search_0_document_0_phone.png",
+        "test": "../bitmaps_test/20200608-163327/backstop_fewoault_Search_0_document_0_phone.png",
+        "selector": "document",
+        "fileName": "backstop_fewoault_Search_0_document_0_phone.png",
+        "label": "Search",
+        "misMatchThreshold": 0.1,
+        "url": "http://few.docker.localhost/appartments?rooms_start_date%5Bdate%5D=19.10.2020&rooms_end_date%5Bdate%5D=24.10.2020&group_size_adults%3A1=1&field_appartment_size_value%5Bmin%5D=25&field_appartment_size_value%5Bmax%5D=120",
+        "expect": 0,
+        "viewportLabel": "phone",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.12",
+          "analysisTime": 579
+        },
+        "diffImage": "../bitmaps_test/20200608-163327/failed_diff_backstop_fewoault_Search_0_document_0_phone.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/backstop_fewoault_Search_0_document_1_tablet.png",
+        "test": "../bitmaps_test/20200608-163327/backstop_fewoault_Search_0_document_1_tablet.png",
+        "selector": "document",
+        "fileName": "backstop_fewoault_Search_0_document_1_tablet.png",
+        "label": "Search",
+        "misMatchThreshold": 0.1,
+        "url": "http://few.docker.localhost/appartments?rooms_start_date%5Bdate%5D=19.10.2020&rooms_end_date%5Bdate%5D=24.10.2020&group_size_adults%3A1=1&field_appartment_size_value%5Bmin%5D=25&field_appartment_size_value%5Bmax%5D=120",
+        "expect": 0,
+        "viewportLabel": "tablet",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00",
+          "analysisTime": 718
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/backstop_fewoault_Search_0_document_2_Desktop.png",
+        "test": "../bitmaps_test/20200608-163327/backstop_fewoault_Search_0_document_2_Desktop.png",
+        "selector": "document",
+        "fileName": "backstop_fewoault_Search_0_document_2_Desktop.png",
+        "label": "Search",
+        "misMatchThreshold": 0.1,
+        "url": "http://few.docker.localhost/appartments?rooms_start_date%5Bdate%5D=19.10.2020&rooms_end_date%5Bdate%5D=24.10.2020&group_size_adults%3A1=1&field_appartment_size_value%5Bmin%5D=25&field_appartment_size_value%5Bmax%5D=120",
+        "expect": 0,
+        "viewportLabel": "Desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00",
+          "analysisTime": 551
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/backstop_fewoault_Magazin_0_document_0_phone.png",
+        "test": "../bitmaps_test/20200608-163327/backstop_fewoault_Magazin_0_document_0_phone.png",
+        "selector": "document",
+        "fileName": "backstop_fewoault_Magazin_0_document_0_phone.png",
+        "label": "Magazin",
+        "misMatchThreshold": 0.1,
+        "url": "http://few.docker.localhost/magazin/stiftung-weilerheiermann-gabis-hus",
+        "expect": 0,
+        "viewportLabel": "phone",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.51",
+          "analysisTime": 479
+        },
+        "diffImage": "../bitmaps_test/20200608-163327/failed_diff_backstop_fewoault_Magazin_0_document_0_phone.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/backstop_fewoault_Magazin_0_document_1_tablet.png",
+        "test": "../bitmaps_test/20200608-163327/backstop_fewoault_Magazin_0_document_1_tablet.png",
+        "selector": "document",
+        "fileName": "backstop_fewoault_Magazin_0_document_1_tablet.png",
+        "label": "Magazin",
+        "misMatchThreshold": 0.1,
+        "url": "http://few.docker.localhost/magazin/stiftung-weilerheiermann-gabis-hus",
+        "expect": 0,
+        "viewportLabel": "tablet",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00",
+          "analysisTime": 528
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/backstop_fewoault_Magazin_0_document_2_Desktop.png",
+        "test": "../bitmaps_test/20200608-163327/backstop_fewoault_Magazin_0_document_2_Desktop.png",
+        "selector": "document",
+        "fileName": "backstop_fewoault_Magazin_0_document_2_Desktop.png",
+        "label": "Magazin",
+        "misMatchThreshold": 0.1,
+        "url": "http://few.docker.localhost/magazin/stiftung-weilerheiermann-gabis-hus",
+        "expect": 0,
+        "viewportLabel": "Desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00",
+          "analysisTime": 508
+        }
+      },
+      "status": "pass"
+    }
+  ],
+  "id": "backstop_fewoault"
+}
