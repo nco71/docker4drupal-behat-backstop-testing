@@ -7,7 +7,4 @@ backstop_data/*
 features/*
 web*
 web/*
-backstop.json
-behat.yml
-behat.local.yml
 .env
