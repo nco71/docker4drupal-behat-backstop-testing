@@ -1,0 +1,116 @@
+{
+  "id": "backstop_fewoault",
+  "viewports": [
+    {
+      "label": "PhoneS",
+      "width": 479,
+      "height": 1280
+    },
+    {
+      "label": "PhoneX",
+      "width": 619,
+      "height": 1280
+    },
+    {
+      "label": "TabletS",
+      "width": 745,
+      "height": 1280
+    },
+    {
+      "label": "tabletX",
+      "width": 979,
+      "height": 1280
+    },
+    {
+      "label": "DesktopS",
+      "width": 1079,
+      "height": 1660
+    },
+    {
+      "label": "DesktopL",
+      "width": 1280,
+      "height": 1660
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Contact",
+      "url": "http://few.opensustainability.pw/contact",
+      "referenceUrl": "http://fewoaufsylt.de/contact",
+      "delay": 500,
+      "hideSelectors": [".page-contact #content .field-name-body .field-item iframe"],
+      "misMatchThreshold" : 0.5
+    },
+    
+    {
+      "label": "impressut",
+      "url": "http://few.opensustainability.pw/content/impressum",
+      "referenceUrl": "http://fewoaufsylt.de/content/impressum",
+      "delay": 500,
+      "misMatchThreshold" : 0.5
+    },
+    {
+      "label": "Keitum",
+      "url": "http://few.opensustainability.pw/keitum",
+      "referenceUrl": "http://fewoaufsylt.de/keitum",
+      "delay": 500,
+      "misMatchThreshold" : 0.5
+    },
+    {
+      "label": "Appartment",
+      "url": "http://few.opensustainability.pw/appartement/hausteil-paula",
+      "referenceUrl": "http://fewoaufsylt.de/appartement/hausteil-paula",
+      "delay": 500,
+      "misMatchThreshold" : 0.5
+    },
+    {
+      "label": "Search",
+      "url": "http://few.opensustainability.pw/appartments?rooms_start_date%5Bdate%5D=19.10.2020&rooms_end_date%5Bdate%5D=24.10.2020&group_size_adults%3A1=1&field_appartment_size_value%5Bmin%5D=25&field_appartment_size_value%5Bmax%5D=120",
+      "referenceUrl": "http://fewoaufsylt.de/appartments?rooms_start_date%5Bdate%5D=19.10.2020&rooms_end_date%5Bdate%5D=24.10.2020&group_size_adults%3A1=1&field_appartment_size_value%5Bmin%5D=25&field_appartment_size_value%5Bmax%5D=120",
+      "delay": 500,
+      "misMatchThreshold" : 0.5
+    },
+
+    {
+      "label": "Magazin",
+      "url": "http://few.opensustainability.pw/magazin/stiftung-weilerheiermann-gabis-hus",
+      "referenceUrl": "http://fewoaufsylt.de/magazin/stiftung-weilerheiermann-gabis-hus",
+      "delay": 500,
+      "misMatchThreshold" : 0.5
+    },
+    {
+      "label": "Booking form",
+      "url": "http://few.opensustainability.pw/anfrage/01-10-2020/07-10-2020/96/1084/1",
+      "referenceUrl": "http://fewoaufsylt.de/anfrage/01-10-2020/07-10-2020/96/1084/1",
+      "delay": 500,
+      "misMatchThreshold" : 0.5
+    },
+    {
+      "label": "Homepage",
+      "selectors": ["viewport","html"],
+      "url": "http://few.opensustainability.pw",
+      "referenceUrl": "http://fewoaufsylt.de",
+      "delay": 1000,
+      "clickSelector": ".advanced_options a",
+      "readySelector":  "input[type='email']",    
+      "hideSelectors": ["#block-views-frontpage-top-slide-block ul li img"],
+      "misMatchThreshold" : 0.5
+    }
+  ],
+  "paths": {
+    "bitmaps_reference": "backstop_data/bitmaps_reference",
+    "bitmaps_test": "backstop_data/bitmaps_test",
+    "engine_scripts": "backstop_data/engine_scripts",
+    "html_report": "backstop_data/html_report",
+    "ci_report": "backstop_data/ci_report"
+  },
+  "report": ["browser"],
+  "engine": "puppeteer",
+  "engineOptions": {
+    "args": ["--no-sandbox"]
+  },
+  "asyncCaptureLimit": 1,
+  "asyncCompareLimit": 1,
+  "debug": false,
+  "debugWindow": false
+}

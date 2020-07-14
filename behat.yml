@@ -1,0 +1,32 @@
+#imports:
+# - behat.local.yml
+default:
+  suites:
+    default:
+      contexts:
+        - FeatureContext
+        - Drupal\DrupalExtension\Context\DrupalContext
+        - Drupal\DrupalExtension\Context\MinkContext
+        - Drupal\DrupalExtension\Context\MessageContext
+        - Drupal\DrupalExtension\Context\DrushContext
+  gherkin:
+    cache: ~
+  extensions:
+    DMore\ChromeExtension\Behat\ServiceContainer\ChromeExtension: ~
+    Behat\MinkExtension:
+      goutte: ~
+      base_url: http://nginx
+    Drupal\DrupalExtension:
+      blackbox: ~
+      api_driver: 'drush'
+      drush:
+        alias: "local.dev"
+      drupal:
+        drupal_root: /var/www/html/web/
+      region_map:
+        header: "#header"
+        admin-menu: "#admin-menu-wrapper"
+        blockviewfrontpage: "#block-views-frontpage-view-block-1"
+        sidebar: "#sidebar-first"
+        content: "#content"
+        footer: ".site-footer"

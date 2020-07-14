@@ -1,0 +1,84 @@
+{
+  "id": "backstop_fewoault",
+  "viewports": [
+    {
+      "label": "phone",
+      "width": 320,
+      "height": 960
+    },
+    {
+      "label": "tablet",
+      "width": 1024,
+      "height": 768
+    },
+    {
+      "label": "Desktop",
+      "width": 1280,
+      "height": 988
+    }
+
+  ],
+  "onBeforeScript": "puppet/onBefore.js",
+  "onReadyScript": "puppet/onReady.js",
+  "scenarios": [
+    {
+      "label": "Homepage",
+      "url": "http://few.docker.localhost",
+      "delay": 500,
+      "misMatchThreshold" : 0.5
+    },
+    {
+      "label": "Contact",
+      "url": "http://few.docker.localhost/contact",
+      "delay": 500,
+      "misMatchThreshold" : 0.5
+    },
+    {
+      "label": "impressut",
+      "url": "http://few.docker.localhost/content/impressum",
+      "delay": 500,
+      "misMatchThreshold" : 0.5
+    },
+    {
+      "label": "Keitum",
+      "url": "http://few.docker.localhost/keitum",
+      "delay": 500,
+      "misMatchThreshold" : 0.5
+    },
+    {
+      "label": "Appartment",
+      "url": "http://few.docker.localhost/appartement/hausteil-paula",
+      "delay": 500,
+      "misMatchThreshold" : 0.5
+    },
+    {
+      "label": "Search",
+      "url": "http://few.docker.localhost/appartments?rooms_start_date%5Bdate%5D=19.10.2020&rooms_end_date%5Bdate%5D=24.10.2020&group_size_adults%3A1=1&field_appartment_size_value%5Bmin%5D=25&field_appartment_size_value%5Bmax%5D=120",
+      "delay": 500,
+      "misMatchThreshold" : 0.5
+    },
+
+    {
+      "label": "Magazin",
+      "url": "http://few.docker.localhost/magazin/stiftung-weilerheiermann-gabis-hus",
+      "delay": 500,
+      "misMatchThreshold" : 0.5
+    }
+  ],
+  "paths": {
+    "bitmaps_reference": "backstop_data/bitmaps_reference",
+    "bitmaps_test": "backstop_data/bitmaps_test",
+    "engine_scripts": "backstop_data/engine_scripts",
+    "html_report": "backstop_data/html_report",
+    "ci_report": "backstop_data/ci_report"
+  },
+  "report": ["browser"],
+  "engine": "puppeteer",
+  "engineOptions": {
+    "args": ["--no-sandbox"]
+  },
+  "asyncCaptureLimit": 5,
+  "asyncCompareLimit": 50,
+  "debug": false,
+  "debugWindow": false
+}

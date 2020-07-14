@@ -1,0 +1,25 @@
+# Local configuration.
+default:
+  contexts:
+    parameter:
+      drupal_users:
+        drupal:
+          'drupal'
+        site nco:
+          'few@qdrun6k'
+        git user:
+          'git user pass here'
+        git vetted user:
+          'git vetted user pass here'
+        docs manager:
+          'docs moderator pass here'
+        admin test:
+          'admin test pass here'
+        site maintainer:
+          'site maintainer pass here'
+      #git usernames don't always match the drupal username
+      git_users:
+        gituser:
+          'gituser pass here'
+        gitvetteduser:
+          'gitvetteduser pass here'
