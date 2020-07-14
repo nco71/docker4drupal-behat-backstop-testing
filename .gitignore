@@ -1,7 +1,9 @@
 .idea/
 .docker-sync/
+files_prod_backup/*
 capture_browser/*
 backstop_data/*
+*/backstop_data/*
 features/*
 web*
 web/*
