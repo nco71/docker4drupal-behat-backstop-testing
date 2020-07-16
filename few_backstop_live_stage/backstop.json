@@ -14,25 +14,53 @@
     {
       "label": "TabletS",
       "width": 745,
-      "height": 1280
+      "height": 1680
     },
     {
       "label": "tabletX",
       "width": 979,
-      "height": 1280
+      "height": 1680
     },
     {
       "label": "DesktopS",
       "width": 1079,
-      "height": 1660
+      "height": 2860
     },
     {
       "label": "DesktopL",
       "width": 1280,
-      "height": 1660
+      "height": 2860
     }
   ],
+  "onBeforeScript": "puppet/onBefore.js",
+  "onReadyScript": "puppet/onReady.js",
   "scenarios": [
+    {
+      "label": "Responsive menu",
+      "viewports": [
+        {
+          "label": "PhoneMenu",
+          "width": 479,
+          "height": 1280
+        }
+      ],
+      "url": "http://few.opensustainability.pw",
+      "referenceUrl": "http://fewoaufsylt.de",
+      "readyEvent": "",
+      "readySelector": "",
+      "delay": 0,
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "hoverSelector": "",
+      "clickSelector": ".meanmenu-reveal",
+      "postInteractionWait": 500,
+      "selectors": ["viewport"],
+      "selectorExpansion": true,
+      "expect": 0,
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
+    },
+
     {
       "label": "Contact",
       "url": "http://few.opensustainability.pw/contact",
@@ -87,11 +115,12 @@
     },
     {
       "label": "Homepage",
-      "selectors": ["viewport","html"],
+      "selectors": ["viewport"],
       "url": "http://few.opensustainability.pw",
       "referenceUrl": "http://fewoaufsylt.de",
       "delay": 1000,
-      "clickSelector": ".advanced_options a",
+      "clickSelectors": [".advanced_options a",".cc-dismiss"],
+      "postInteractionWait": 500,
       "readySelector":  "input[type='email']",    
       "hideSelectors": ["#block-views-frontpage-top-slide-block ul li img"],
       "misMatchThreshold" : 0.5
@@ -109,8 +138,8 @@
   "engineOptions": {
     "args": ["--no-sandbox"]
   },
-  "asyncCaptureLimit": 1,
-  "asyncCompareLimit": 1,
+  "asyncCaptureLimit": 5,
+  "asyncCompareLimit": 50,
   "debug": false,
   "debugWindow": false
 }
